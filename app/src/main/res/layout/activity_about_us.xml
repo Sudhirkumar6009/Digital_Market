@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/about_us_top_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue"
+        android:padding="20dp"
+        android:paddingStart="70dp"
+        android:text="About us"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/back_about_us_activity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-57sp"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_24" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About us"
+            android:textColor="@color/black"
+            android:layout_margin="10sp"
+            android:paddingTop="10sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Welcome to my Digital Market Application! I'm student of Government Polytechnic, Ambavadi. My name is Sudhir, I am the creator of this innovative app, and I'm excited to share with you the journey behind its creation. As part of an enriching internship experience, I've developed this application to bring you a seamless digital marketplace that caters to your needs."
+            android:padding="20sp" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Vision and Mission:"
+        android:textStyle="bold"
+        android:letterSpacing="0.03"
+        android:layout_marginStart="20sp"
+        android:textSize="20sp" />
+        <View
+            android:layout_width="350dp"
+            android:layout_marginTop="10sp"
+            android:layout_height=".5dp"
+            android:layout_marginStart="20sp"
+            android:background="@color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Our vision is to provide a platform where users can effortlessly connect and engage with a wide range of digital products and services. With Sudhir's Digital Market Application, we aim to transform the way you access, explore, and interact with various digital offerings, all while fostering a user-friendly and intuitive environment."
+            android:padding="20sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Join us on this Journey"
+            android:layout_marginStart="20sp"
+            android:letterSpacing="0.03"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="350dp"
+            android:layout_marginTop="10sp"
+            android:layout_height=".5dp"
+            android:layout_marginStart="20sp"
+            android:background="@color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginBottom="-10sp"
+            android:text="Embark on this exciting journey with us as we redefine the digital marketplace landscape. Whether you're a tech enthusiast, a lifelong learner, or a creative spirit, Sudhir's Digital Market Application is designed to cater to your interests and empower your digital aspirations."
+            android:padding="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Thank you for choosing Sudhir's Digital Market Application. Together, we're shaping the future of the digital marketplace!"
+            android:padding="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Connect with Us"
+            android:layout_marginStart="20sp"
+            android:letterSpacing="0.03"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="350dp"
+            android:layout_marginTop="10sp"
+            android:layout_height=".5dp"
+            android:layout_marginStart="20sp"
+            android:background="@color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:paddingTop="20sp"
+            android:text="Feel free to reach out to us at "
+            />
+
+        <TextView
+            android:id="@+id/link_email_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:paddingStart="15sp"
+            android:layout_margin="5sp"
+            android:text="sudhir.kuchara@gmail.com"
+            android:textColor="@color/skyblue"
+            android:autoLink="email"
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:text="for any inquiries, feedback, or collaborations. We're thrilled to have you on board and look forward to serving you better each day."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Warm regards,"
+            android:paddingTop="20sp"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="Sudhir"
+            android:textStyle="bold"
+            android:paddingBottom="20sp"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

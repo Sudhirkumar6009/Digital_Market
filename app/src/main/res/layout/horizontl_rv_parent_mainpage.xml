@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerImageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="110dp"
+        app:dotsColor="#FFFFFF"
+        app:dotsCornerRadius="10dp"
+        app:dotsSize="10dp"
+        app:dotsStrokeColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPagerImageSlider"
+        android:layout_marginTop="-5dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horizontl_rv_child"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:padding="10dp"
+            android:text="All Products"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/tv_discount"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="370dp"
+        android:text="Discount Offer Products"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_discount"
+        android:scrollbars="none">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="#F8F8F8"
+                app:cardElevation="20dp"
+                android:id="@+id/laptop_discount"
+                android:layout_marginRight="20dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#FDFCE7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/laptop_discount_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:id="@+id/laptop_discount_img_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="96dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/laptop_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+                    <ProgressBar
+                        android:id="@+id/laptop_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#F1FEFE"
+                app:cardElevation="20dp"
+                android:id="@+id/mobile_discount"
+                android:layout_margin="15dp"
+                android:layout_marginRight="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#F2FEFE"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/mobile_discount_img"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_gravity="center">
+                    </ImageView>
+                    <ImageView
+                        android:id="@+id/mobile_discount_img_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="96dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/mobile_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+                    <ProgressBar
+                        android:id="@+id/mobile_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="#F8F8F8"
+                app:cardElevation="20dp"
+                android:id="@+id/w_m_discount"
+                android:layout_marginRight="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#FEFDE8"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/w_m_discount_img"
+                        android:layout_width="89dp"
+                        android:layout_gravity="center"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="0dp" />
+                    <ImageView
+                        android:id="@+id/w_m_discount_img_logo"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="96dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/w_m_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+                    <ProgressBar
+                        android:id="@+id/w_m_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#F1FEFE"
+                app:cardElevation="20dp"
+                android:id="@+id/cpu_discount"
+                android:layout_margin="15dp"
+                android:layout_marginRight="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/cpu_discount_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="-10dp" >
+                    </ImageView>
+                    <ImageView
+                        android:id="@+id/cpu_discount_img_logo"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="96dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/cpu_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+                    <ProgressBar
+                        android:id="@+id/cpu_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#F1FEFE"
+                app:cardElevation="20dp"
+                android:id="@+id/tv_discount_cv"
+                android:layout_margin="15dp"
+                android:layout_marginRight="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/tv_discount_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-15dp">
+                    </ImageView>
+                    <ImageView
+                        android:id="@+id/tv_discount_img_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="109dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/tv_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+                    <ProgressBar
+                        android:id="@+id/tv_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="#F8F8F8"
+                app:cardElevation="20dp"
+                android:id="@+id/fridge_discount"
+                android:layout_marginRight="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#FDFCE7"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/frige_discount_img"
+                        android:layout_width="69dp"
+                        android:layout_gravity="center"
+                        android:layout_height="120dp" />
+                    <ImageView
+                        android:id="@+id/frige_discount_img_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="96dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/frige_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+                    <ProgressBar
+                        android:id="@+id/frige_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#F1FEFE"
+                app:cardElevation="20dp"
+                android:id="@+id/earbuds_discount"
+                android:layout_margin="15dp"
+                android:layout_marginRight="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#F2FEFE"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/earbuds_discount_img"
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp" >
+                    </ImageView>
+                    <ImageView
+                        android:id="@+id/earbuds_discount_img_logo"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="96dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/earbuds_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+
+                    <ProgressBar
+                        android:id="@+id/earbuds_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:layout_margin="15dp"
+                app:cardElevation="20dp"
+                android:backgroundTint="#FEFDE8"
+                android:id="@+id/speakers_discount"
+                android:layout_marginRight="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#FEFDE8">
+                    <ImageView
+                        android:id="@+id/speaker_discount_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/speaker_discount_img_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="96dp"
+                        android:layout_marginStart="3dp" />
+
+                    <ImageView
+                        android:id="@+id/speaker_discount_img_label"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="102dp"
+                        android:layout_marginTop="66dp" />
+                    <ProgressBar
+                        android:id="@+id/speaker_discount_progressbar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

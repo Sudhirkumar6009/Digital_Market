@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537408925446",
+    "project_id": "digital-market-application",
+    "storage_bucket": "digital-market-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537408925446:android:60452dc270d7201b0ef887",
+        "android_client_info": {
+          "package_name": "com.sudhir.digitalmarketapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537408925446-ll7530tio3sdrjl8f4qu47nq8hjp4ilo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6fKkag7MA6Wjz4pLobXWkWMtmj0Rx2ZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537408925446-ll7530tio3sdrjl8f4qu47nq8hjp4ilo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

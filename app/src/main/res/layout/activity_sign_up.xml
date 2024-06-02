@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_14"
+    android:weightSum="100"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalScrollbarPosition="right">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="500sp"
+            android:background="@drawable/cardview_shape"
+            app:cardCornerRadius="15sp"
+            app:cardElevation="50sp"
+            android:layout_margin="50sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_up_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skyblue"
+                    android:padding="15dp"
+                    android:text="Sign up"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Credentials here"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:padding="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:id="@+id/sign_up_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:textSize="15sp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/bg_load_search_bar"
+                    android:hint="Username"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+
+
+                <EditText
+                    android:id="@+id/sign_up_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:maxLength="10"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="20sp"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="20sp"
+                    android:layout_marginBottom="10sp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/bg_load_search_bar"
+                    android:hint="Password"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+
+
+                <Button
+                    android:id="@+id/create_account_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/skyblue"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:elevation="5sp"
+                    android:textSize="17dp"
+                    android:text="Create Account" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?  "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10sp" />
+                <TextView
+                    android:id="@+id/sign_in_text_sign_up_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login here !"
+                    android:textColor="@color/skyblue"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

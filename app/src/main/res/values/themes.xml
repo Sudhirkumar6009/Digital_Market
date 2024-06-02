@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DigitalMarketApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/skyblue</item>
+        <item name="colorOnPrimary">#00192E</item>
+        <item name="android:statusBarColor">@color/skyblue</item>
+        <!-- Customize other theme attributes as needed -->
+    </style>
+
+    <style name="BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+        <!-- Customize attributes here -->
+        <!-- Add more customizations as needed -->
+    </style>
+
+
+    <style name="FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <!-- Customize attributes here -->
+        <item name="iconTint">@color/black</item>
+        <item name="backgroundTint">#003661</item>
+        <!-- Add more customizations as needed -->
+    </style>
+
+    <style name="Theme.DigitalMarketApplication" parent="Base.Theme.DigitalMarketApplication">
+        <!-- Customize specific attributes for your app -->
+    </style>
+
+    <style name="Theme.DigitalMarketApplication.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DigitalMarketApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DigitalMarketApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

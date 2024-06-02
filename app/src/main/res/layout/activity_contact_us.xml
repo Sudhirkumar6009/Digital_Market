@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".ContactUsActivity">
+
+    <TextView
+        android:id="@+id/contact_us_top_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue"
+        android:padding="20dp"
+        android:paddingStart="70dp"
+        android:text="Contact us"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/back_contact_us_activity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-48sp"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_24" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact us"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="20sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_input_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your name"
+            android:textSize="15sp"
+            android:layout_marginStart="20sp"
+            android:inputType="text"
+            android:layout_marginEnd="20sp"
+            android:paddingStart="20sp"
+            android:elevation="5sp"
+            android:background="@drawable/edit_text_contact_design" />
+        <EditText
+            android:id="@+id/email_input_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Email"
+            android:textSize="15sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="20sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginEnd="20sp"
+            android:paddingStart="20sp"
+            android:elevation="5sp"
+            android:background="@drawable/edit_text_contact_design" />
+
+        <EditText
+            android:id="@+id/message_input_contact"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Leave Message here"
+            android:textSize="15sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="20sp"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:padding="20sp"
+            android:layout_marginEnd="20sp"
+            android:paddingStart="20sp"
+            android:elevation="5sp"
+            android:background="@drawable/edit_text_contact_design" />
+        <Button
+            android:id="@+id/send_message_btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_button_border"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="20dp"
+            android:text="Send Message" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

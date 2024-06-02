@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DigitalMarketApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".ProfileEditActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePageActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.W_MDetailedActivity.BoschBrandsW_MActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.W_MDetailedActivity.HaierBrandsW_MActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.W_MDetailedActivity.WhirlpoolBrandsW_MActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.W_MDetailedActivity.LgBrandsW_MActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.W_MDetailedActivity.SamsungBrandsW_MActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.FrigeDetailedActivity.HaierBrandsFrigeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.FrigeDetailedActivity.GodrejBrandsFrigeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.FrigeDetailedActivity.SamsungBrandsFrigeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.FrigeDetailedActivity.WhirlpoolBrandsFrigeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.FrigeDetailedActivity.LgBrandsFrigeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.MobilesDetailedActivity.AppleBrandsMobilesActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.MobilesDetailedActivity.MiBrandsMobilesActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.MobilesDetailedActivity.VivoBrandsMobilesActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.MobilesDetailedActivity.OppoBrandsMobilesActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.MobilesDetailedActivity.OneplusBrandsMobileActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.MobilesDetailedActivity.SamsungBrandsMobilesActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionDetailedActivity.HisenseBrandsTvActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionDetailedActivity.PhilipsBrandsTvActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionDetailedActivity.PanasonicBrandsTvActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionDetailedActivity.TclBrandsTvActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionDetailedActivity.LgBrandsTvActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionDetailedActivity.SonyBrandsTvActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionDetailedActivity.SamsungBrandsTvActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.HonorBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.SamsungBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi"
+            android:exported="false" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.MsiBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.SonyBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.LgBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.AppleBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.AcerBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.AsusBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.DellBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.HpBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsDetailedActivity.LenovoBrandsLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountSpeakersActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountCPUActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountEarbudsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountWMActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountFridgeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountMobileActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountTvActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".DiscountProducts.DiscountLaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.AccessoriesActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.W_MActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.FridgeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.MobilesActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.TelevisionActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".HorizontalActivities.LaptopsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".MainPageActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            tools:ignore="DiscouragedApi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

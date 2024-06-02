@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-44dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginRight="-40dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/img_7" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-47dp"
+            app:srcCompat="@drawable/bg_load" />
+
+        <ImageView
+            android:id="@+id/imageView_person"
+            android:layout_width="66dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="5sp"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/person" />
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10sp"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_rounded_corner"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="42dp"
+            android:text="Welcome"
+            android:textColor="#555555"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toStartOf="@+id/imageView_person"
+            android:gravity="right"
+            android:text="Mr. User"
+            android:textColor="#000000" />
+        <ImageView
+            android:id="@+id/imageView_drawer_trigger"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/round_menu_24"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="119dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="-25dp"
+            app:srcCompat="@drawable/img_1" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView4"
+            android:layout_marginTop="5dp"
+            android:padding="1dp"
+            android:id="@+id/rv_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/named_fab_main_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#004E8A"
+            android:text="Categories"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:icon="@drawable/round_categories_24"
+            app:iconSize="20dp"
+            app:iconTint="@color/white"
+            app:shapeAppearance="@null" />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" >
+        <include layout="@layout/nav_drawer_layout" />
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
